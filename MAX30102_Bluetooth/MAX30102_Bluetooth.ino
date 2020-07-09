@@ -98,7 +98,7 @@ void setup(void)
     while (1);
   }
 
-  //Setup to sense a nice looking saw tooth on the plotter
+  // Setup to sense a nice looking saw tooth on the plotter
   byte ledBrightness = 0x1F; //Options: 0=Off to 255=50mA
   byte sampleAverage = 2; //Options: 1, 2, 4, 8, 16, 32
   byte ledMode = 2; //Options: 1 = Red only, 2 = Red + IR, 3 = Red + IR + Green
@@ -181,7 +181,6 @@ void setup(void)
   Serial.println();
 }
 
-/** Send randomized heart rate data continuously **/
 void loop(void)
 {
   int IR_val = particleSensor.getIR();
